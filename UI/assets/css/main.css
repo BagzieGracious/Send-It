@@ -18,7 +18,13 @@ h1, h2, h3{
 .ctr{
     text-align: center;
 }
-p, label, span, li{
+.lft{
+    text-align: left;
+}
+.rgt{
+    text-align: right;
+}
+p, label, span, li, td{
     font-family: "Lato", "Arial", sans-serif;
     color: grey;
 }
@@ -232,6 +238,12 @@ div.login-wrapper .wrap .form .text, .text label{
 .text button.success{
     background: #16a085;
 }
+.text h3{
+    margin: 0px;
+}
+.text p{
+    margin: 10px 0px;
+}
 .text button.danger{
     background: #dc3545;
 }
@@ -303,44 +315,66 @@ div.breadcrumb ul li{
 }
 
 /*** list page ***/
-.order-form ul{
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
+.order-form table{
+    width: 100%;
+    border-collapse: collapse;
 }
-.order-form ul li{
-    overflow: auto;
-    display: block;
-    margin-bottom: 10px;
+.order-form table tr td{
     padding: 10px;
 }
-.order-form ul li:hover{
-    background: silver;
-    cursor: pointer;
-}
-.order-form ul li a{
-    overflow: auto;
+.order-form table tr td a{
     text-decoration: none;
-    color: silver;
+    color: gray;
 }
-.order-form ul li a img{
+.order-form table tbody tr:hover, .order-form table tbody tr:hover td, .order-form table tbody tr:hover td a{
+    background: silver;
+    color: white;
+}
+.order-form table tr td img{
     width: 40px;
     height: 40px;
-    float: left;
-}
-.order-form ul li a label{
-    float: left;
-    margin: 10px 0px 0px 2%;
-}
-.order-form ul li a small{
-    float: right;
-    margin: 10px 0px 0px 0px;
-}
-.order-form ul li:hover a label, .order-form ul li:hover a small{
-    color: #fff;
 }
 #product-details{
     margin-top: 30px;
+}
+
+/** profile page **/
+.form-left.profile img{
+    position: relative;
+    width: 60%;
+    margin-left: 20%;
+}
+
+/** admin home page **/
+.green{
+    background: #16a085;
+}
+.red{
+    background: #e05d6f;
+}
+.blue{
+    background: #418bca;
+}
+.orange{
+    background: #f0ad4e;
+}
+.brown{
+    background: #d9534f;
+}
+.mangeta{
+    background: #3f4e62;
+}
+.sys-stats{
+    width: 25%;
+    margin: 2% 2.5%;
+    float: left;
+    padding: 30px 15px;
+    text-align: center;
+}
+.sys-stats h1, .sys-stats p{
+    padding: 0px;
+    margin: 0px;
+    color: white;
 }
 
 /*** ipad pro ***/
@@ -390,8 +424,11 @@ div.breadcrumb ul li{
     div.about-us-content div.abt-cont h1{
         margin: 15px 0px 0px 0px;
     }
-    div.banner-up, div.banner-down{
+    div.banner-up{
         height: 100px;
+    } 
+    div.banner-down{
+        height: 300px;
     }
     div.service-section .service-details{
         width: 100%;
@@ -417,5 +454,9 @@ div.breadcrumb ul li{
     .order-form .form-left, .order-form .form-right{
         float: none;
         width: 97%;
+    }
+    .order-form .sys-stats{
+        width: 90%;
+        margin: 3% 0px;
     }
 }

@@ -10,9 +10,8 @@
     <header id='inside-header'>
         <img src="../../assets/img/icon.png" class="icon" />
         <ul>
-            <li><a href="order.html">order</a></li>
-            <li class="active"><a href="list.html">list</a></li>
-            <li><a href="profile.html">profile</a></li>
+            <li><a href="home.html">home</a></li>
+            <li class="active"><a href="list.html">orders</a></li>
             <li><a href="../../index.html">logout</a></li>
         </ul>
     </header>
@@ -34,6 +33,7 @@
         <div class='about-us-content'>
             <img src="../../assets/img/parcel.png" />
             <div class="abt-cont">
+                <h1 class="ctr">Order Details</h1>
                 <p><strong>Price : </strong> <small>UGX 300,000</small></p>
                 <p><strong>status : </strong> <small>In-transit</small></p>
                 <p><strong>Destination : </strong> <small id="area">Makindye</small></p>
@@ -41,8 +41,8 @@
                 <p><strong>Present Location : </strong> <small>Wandegaya</small></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                 <p class="text">
-                    <button onclick="changedesination()" class="success">Change Destination</button>
-                    <button class="danger">Cancel Delivery</button>
+                    <button onclick="changedesination()" class="success">Change Status</button>
+                    <button onclick="changelocation()" class="blue">Change Location</button>
                 </p>
             </div>
         </div>
@@ -54,8 +54,8 @@
             <div class="form">
                 <p id="login-error"></p>
                 <div class="text">
-                    <label>New Destination</label>
-                    <input type="text" id="destination" placeholder="enter new destination" /> 
+                    <label>New Status</label>
+                    <input type="text" id="destination" placeholder="enter new status" /> 
                 </div>
                 <div class="text">
                     <button class="success" onclick="changed()">Change</button>
@@ -64,7 +64,22 @@
             </div>
         </div>
     </div>
-    <div id='signup-wrapper'></div>
+    <div class="login-wrapper" id='signup-wrapper'>
+        <div class="wrap">
+            <p><img src="../../assets/img/icon.png" /></p>
+            <div class="form">
+                <p id="login-error"></p>
+                <div class="text">
+                    <label>New Location</label>
+                    <input type="text" id="destination" placeholder="enter new location" /> 
+                </div>
+                <div class="text">
+                    <button class="success" onclick="ched()">Change</button>
+                    <button class="danger" onclick="cls()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="banner-down">
         <img src="../../assets/img/map1.PNG" />
