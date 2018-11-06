@@ -21,7 +21,7 @@ function signin(){
         }, 3000)
     }else{
         if (username.value == 'admin' && password.value == 'admin'){
-            window.location.href = "pages/admin/orders.html";
+            window.location.href = "pages/admin/home.html";
         }else{
             window.location.href = "pages/user/order.html";
         }
@@ -59,6 +59,10 @@ function adduser(){
 
 function changedesination(){
     lgn.style.display = "block";
+}
+
+function changelocation(){
+    sgn.style.display = "block";
 }
 
 function changed(){
